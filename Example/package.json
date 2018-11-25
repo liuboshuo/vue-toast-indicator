@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.config.js --open --hot",
     "bundle": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors"
   },
@@ -27,6 +28,7 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-toast-indicator": "^1.0.0"
   }
 }

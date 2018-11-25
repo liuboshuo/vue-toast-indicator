@@ -1,7 +1,7 @@
-import Toast from './toast'
-import Indicator from './indicator'
+var Toast = require("./toast").default;
+var Indicator = require('./indicator').default;
 
-export  default  {
-    Toast,
-    Indicator
-};
+module.exports = {
+    Toast: Toast,
+    Indicator: Indicator
+}

@@ -1,0 +1,4 @@
+.idea
+Example/node_modules/
+Example/package-lock.json
+Example/npm-debug.log

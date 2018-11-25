@@ -18,8 +18,7 @@
 </template>
 
 <script>
-    import Toast from '../toast/index.js'
-    import Indicator from '../indicator/index.js'
+    import {Toast,Indicator} from 'vue-toast-indicator'
     export default {
         name: "App",
         methods:{
