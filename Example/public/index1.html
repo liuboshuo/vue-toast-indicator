@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <meta charset="UTF-8">
+    <title>vue-template</title>
+</head>
+<body>
+<div id="app">
+    {{message}}
+</div>
+<script>
+
+    var app = new Vue({
+//        el:"#app",
+        data:{
+            message:"hello world",
+        },
+        template:"<p>{{message}}</p>",
+    })
+    var parentNode = document.createElement("div");
+    parentNode.innerHTML = "132";
+    app.$mount(parentNode);
+    document.body.appendChild(app.$el);
+    // app.$mount("#app");
+    console.log(app.$el);
+
+</script>
+<!--<script src="bundle.js"></script>-->
+
+</body>
+</html>

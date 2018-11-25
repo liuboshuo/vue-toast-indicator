@@ -1,0 +1,19 @@
+{
+  "name": "vue-toast-indicator",
+  "version": "1.0.0",
+  "description": "vue的toast和loading组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuboshuo/vue-toast-indicator.git"
+  },
+  "author": "liushuo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuboshuo/vue-toast-indicator/issues"
+  },
+  "homepage": "https://github.com/liuboshuo/vue-toast-indicator#readme"
+}
