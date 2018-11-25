@@ -29,6 +29,6 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "vue": "^2.5.16",
-    "vue-toast-indicator": "^1.0.0"
+    "vue-toast-indicator": "^1.0.2"
   }
 }
