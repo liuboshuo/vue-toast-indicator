@@ -26,26 +26,26 @@ ToastConstructor.prototype.close = function () {
 
 
 export default {
+    install(Vue,option){
+        console.log(123)
+        Vue.prototype.$Toast = (options) => {
+            let parentNode = document.createElement("div");
+            let instance = new ToastConstructor().$mount(parentNode)
 
-    show:function(options = {}) {
-
-        let parentNode = document.createElement("div");
-        let instance = new ToastConstructor().$mount(parentNode)
-
-        let duration = options.duration || defaultProps.duration;
-        instance.message = options.message || defaultProps.message;
-        instance.position = options.position || defaultProps.position;
+            let duration = options.duration || defaultProps.duration;
+            instance.message = options.message || defaultProps.message;
+            instance.position = options.position || defaultProps.position;
 
 
-        document.body.appendChild(instance.$el);
-        instance.visible = true;
-        Vue.nextTick(() => {
-            instance.timer = setTimeout(() => {
-                instance.close()
-            }, duration)
-        })
+            document.body.appendChild(instance.$el);
+            instance.visible = true;
+            Vue.nextTick(() => {
+                instance.timer = setTimeout(() => {
+                    instance.close()
+                }, duration)
+            })
 
-        return instance;
+            return instance;
+        }
     }
-
 }

@@ -1,6 +1,6 @@
 {
   "name": "vue-toast-indicator",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "vue的toast和loading组件",
   "main": "index.js",
   "scripts": {

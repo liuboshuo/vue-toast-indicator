@@ -25,18 +25,21 @@ IndicatorConstructor.prototype.close = function () {
 let instance = null;
 export default {
 
-    show: function(options = {}){
+    install(Vue,option){
+        Vue.prototype.$Indicator = function (options = {}) {
 
-        instance = new IndicatorConstructor().$mount()
+            instance = new IndicatorConstructor().$mount()
 
-        instance.message = options.message || defaultProps.message;
-        document.body.appendChild(instance.$el);
-        instance.visible = true;
+            instance.message = options.message || defaultProps.message;
+            document.body.appendChild(instance.$el);
+            instance.visible = true;
 
-        return instance;
+            return instance;
+        },
+         Vue.prototype.$Indicator.hidden = function () {
+            instance.close();
+        }
     },
 
-    hidden:function () {
-        instance.close();
-    }
+    
 }
