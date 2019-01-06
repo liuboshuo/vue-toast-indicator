@@ -18,20 +18,19 @@
 </template>
 
 <script>
-    import {Toast,Indicator} from 'vue-toast-indicator'
     export default {
         name: "App",
         methods:{
             toast(){
-                Toast.show({message:"toast...",position:"bottom"})
+                this.$Toast({message:"toast...",position:"bottom"})
             },
             toast1(){
-                Toast.show({message:"toast...",position:"middle"})
+                this.$Toast({message:"toast...",position:"middle"})
             },
             indicator(){
-                Indicator.show({message:"加载中..."})
+                this.$Indicator({message:"加载中..."})
                 setTimeout(()=>{
-                    Indicator.hidden();
+                    this.$Indicator.hidden();
                 },600);
             }
         }
