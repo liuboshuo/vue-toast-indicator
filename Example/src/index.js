@@ -3,7 +3,7 @@ import App from './App.vue'
 import {
     Toast,
     Indicator
-} from './vue-toast-indicator'
+} from 'vue-toast-indicator'
 
 Vue.use(Toast);
 Vue.use(Indicator);
